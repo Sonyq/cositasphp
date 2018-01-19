@@ -16,7 +16,7 @@ abstract class TwigView {
 
         if (!isset(self::$twig)) {
 
-            Twig_Autoloader::register();
+            
             $loader = new Twig_Loader_Filesystem('./templates');
             self::$twig = new Twig_Environment($loader, array());
         }
